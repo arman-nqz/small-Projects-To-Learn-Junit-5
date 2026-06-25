@@ -20,6 +20,8 @@ public class TriangleParameterizedTest {
     })
     @ParameterizedTest
     public void testTriangleParameterized(int lengthA, int lengthB, int lengthC, int expectedEqualSides) {
-        assertEquals(expectedEqualSides, Triangle.numberOfEqualSides(lengthA, lengthB, lengthC));
+        Triangle triangle = new Triangle();
+
+        assertEquals(expectedEqualSides, triangle.numberOfEqualSides(lengthA, lengthB, lengthC));
     }
 }
